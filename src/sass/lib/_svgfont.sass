@@ -1,0 +1,53 @@
+@font-face
+	font-family: "svgfont"
+	src: url('fonts/svgfont.eot')
+	src: url('fonts/svgfont.eot?#iefix') format('eot'), url('fonts/svgfont.woff') format('woff'), url('fonts/svgfont.woff2') format('woff2'), url('fonts/svgfont.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal
+
+$icon-comb: "\EA01"
+$icon-copy: "\EA02"
+$icon-git: "\EA03"
+$icon-house: "\EA04"
+$icon-install-pic: "\EA05"
+$icon-it: "\EA06"
+$icon-lamp: "\EA07"
+$icon-open-pic: "\EA08"
+$icon-test: "\EA09"
+$icon-tw: "\EA0A"
+
+
+%icon
+	font-family: "svgfont"
+	font-style: normal
+	font-weight: normal
+	text-rendering: auto
+	speak: none
+	line-height: 1
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+.icon, [class^="icon-"], [class*=" icon-"]
+	@extend %icon
+	display: inline-block
+
+.icon-comb:before
+	content: $icon-comb
+.icon-copy:before
+	content: $icon-copy
+.icon-git:before
+	content: $icon-git
+.icon-house:before
+	content: $icon-house
+.icon-install-pic:before
+	content: $icon-install-pic
+.icon-it:before
+	content: $icon-it
+.icon-lamp:before
+	content: $icon-lamp
+.icon-open-pic:before
+	content: $icon-open-pic
+.icon-test:before
+	content: $icon-test
+.icon-tw:before
+	content: $icon-tw
